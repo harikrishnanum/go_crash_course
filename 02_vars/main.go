@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// name := "Brad" // This will throw an error as it is outside of a function. Short declaration can only be used inside a function.
+
 func main() {
 	// MAIN TYPES
 	// string
@@ -19,6 +21,7 @@ func main() {
 	var age int32 = 37
 	const isCool = true
 	var size float32 = 2.3
+	// var unusedVar = "This is an unused variable" // This will throw an error as it is not used anywhere in the program.
 
 	// Shorthand
 	// name := "Brad"
@@ -28,4 +31,5 @@ func main() {
 
 	fmt.Println(name, age, isCool, email)
 	fmt.Printf("%T\n", size)
+
 }
