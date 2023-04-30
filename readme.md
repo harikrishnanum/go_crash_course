@@ -1,4 +1,4 @@
-# Go Crash Course - Traversy Media (Forked Version)
+# Go Crash Course (Forked)
 
 This is a fork of the Go Crash Course by Traversy Media repository, with additional notes.
 
