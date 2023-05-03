@@ -6,7 +6,7 @@ To use a package in your Go program, you need to import it using the `import` st
 import "fmt"
 ```
 
-You can also import multiple packages by separating them with a comma:
+You can also import multiple packages 
 
 ```
 import (
