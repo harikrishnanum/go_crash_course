@@ -48,7 +48,3 @@ The `go mod init` command is typically run once when starting a new Go project, 
 
 Overall, `go mod init` simplifies the process of managing dependencies in Go, by providing a consistent way to declare and track dependencies in your project.
 
-
-Note: 
-
-In Go, when importing packages, the path specified is relative to the $GOPATH environment variable. The $GOPATH environment variable specifies the root directory of your Go workspace. By default, the $GOPATH environment variable is set to $HOME/go on Unix systems and %USERPROFILE%\go on Windows systems. You can change the $GOPATH environment variable to point to a different directory if you want to.
