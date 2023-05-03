@@ -8,7 +8,7 @@ In Go, a variable is a named storage location in the computer's memory that hold
 
 In Go, a variable is declared using the `var` keyword followed by an identifier (the variable's name) and a type specification (the type of data that the variable will hold). Here is an example of declaring a variable of type `int` with the name `x`:
 
-```
+``` go
 var x int
 ```
 
@@ -16,7 +16,7 @@ This declaration creates a variable `x` of type `int` with a default value of `0
 
 Go also allows for the declaration of multiple variables in a single statement using a comma-separated list of identifiers and types. Here's an example:
 
-```
+``` go
 var x, y int
 ```
 
@@ -24,7 +24,7 @@ This declaration creates two variables, `x` and `y`, both of type `int` with a d
 
 Go also supports shorthand variable declaration syntax using the `:=` operator. This syntax allows you to declare and initialize a variable in a single statement, without specifying the type. Here's an example:
 
-```
+``` go
 x := 42
 ```
 
