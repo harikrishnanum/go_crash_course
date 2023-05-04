@@ -98,7 +98,7 @@ fmt.Println(sum()) // Output: 0
 
 In this example, we can see that the `sum` function can be called with any number of integer arguments, including zero arguments. This can be useful in situations where we need to pass a varying number of arguments to a function.
 
-Note: 
+Note: <br>
 In Go, ... is used as a variadic parameter that allows a function to take a varying number of arguments. It can also be used to expand a slice or array into individual elements when passed as a variadic argument to a function.
 ``` go
 s := []int{1, 2, 3, 4, 5}
