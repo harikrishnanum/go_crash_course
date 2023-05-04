@@ -13,7 +13,7 @@ Here are some key concepts related to functions in Go:
 
 Here's an example of a function that takes two integers as input parameters and returns their sum:
 
-```
+``` go
 func add(x int, y int) int {
     return x + y
 }
@@ -21,7 +21,7 @@ func add(x int, y int) int {
 
 This function takes two integers (`x` and `y`) as input parameters and returns their sum as an integer. We can call this function like this:
 
-```
+``` go
 result := add(3, 5)
 fmt.Println(result) // Output: 8
 ```
@@ -97,3 +97,14 @@ fmt.Println(sum()) // Output: 0
 ```
 
 In this example, we can see that the `sum` function can be called with any number of integer arguments, including zero arguments. This can be useful in situations where we need to pass a varying number of arguments to a function.
+
+Note: 
+In Go, ... is used as a variadic parameter that allows a function to take a varying number of arguments. It can also be used to expand a slice or array into individual elements when passed as a variadic argument to a function.
+``` go
+s := []int{1, 2, 3, 4, 5}
+total := sum(s...)  // expands s slice into individual elements
+fmt.Println(total)  // Output: 15
+```
+In the case of slices, ... is used after the variable to indicate that the contents of the slice should be unpacked as individual arguments to the function or the slice itself should be expanded to fit into another slice, whereas in the case of variadic parameters in functions, ... is used before the type to indicate that the function can accept a variable number of arguments of that type.
+
+This is because the use of ... in Go is context-dependent and its meaning can change depending on where it is used.
