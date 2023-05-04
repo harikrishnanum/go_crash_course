@@ -16,10 +16,21 @@ m := map[string]int{"foo": 1, "bar": 2}
 
 In this example, we create a map `m` that maps `"foo"` to `1` and `"bar"` to `2`.
 
+To check if a value exists in a map in Go, you can use the following code:
+
+``` go
+if _, ok := myMap[key]; ok {
+   // key exists
+} else {
+   // key does not exist
+}
+```
+
+In the above code, `myMap` is the map you want to check and `key` is the key you want to check for existence. If the key exists in the map, the variable `ok` will be true, otherwise it will be false. The `_` is used to discard the value associated with the key.
 To access a value in a map, we use the key as an index. Here's an example:
 
 ``` go
-value := m["foo"]
+value, ok := m["foo"]
 ```
 
 In this example, we retrieve the value associated with the key `"foo"`.
