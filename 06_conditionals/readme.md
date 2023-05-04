@@ -42,5 +42,33 @@ default:
     // code to be executed if expression doesn't match any case
 }
 ```
+In Go, the `switch` statement does not require an explicit `break` statement after each case. In Go, once a matching case is executed, the control automatically exits the switch block, unless there is a `fallthrough` statement explicitly used, in which case control is transferred to the next case.
+
+`fallthrough` is a keyword in Go that is used to control the flow of control in a switch statement. When `fallthrough` is used, control is transferred to the next case block, even if it does not match the condition, i.e., it "falls through" the cases.
+
+In Go, each case statement in a switch statement is automatically terminated by a `break` statement, which means that when the code in a case block is executed, the switch statement will exit immediately. However, if the `fallthrough` keyword is used at the end of a case block, control will be transferred to the next case block, regardless of whether its condition is true or false.
+
+Here is an example:
+
+``` go
+switch x {
+case 1:
+	fmt.Println("One")
+	fallthrough
+case 2:
+	fmt.Println("Two")
+case 3:
+	fmt.Println("Three")
+default:
+	fmt.Println("Unknown")
+}
+```
+
+In the above code, if the value of `x` is 1, the output will be:
+```
+One
+Two
+```
+because the `fallthrough` keyword causes the execution to fall through to the next case block, which is case 2. If `fallthrough` was not used, the output would be only "One".
 
 In addition to these basic conditional statements, Go also supports some advanced features such as the ternary operator, which can be used to write simple if-else conditions in a more concise manner.
